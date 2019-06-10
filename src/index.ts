@@ -15,10 +15,9 @@ export class PointyCloudinary {
 	/**
 	 * Check if this request is updating the thumbnail
 	 * @param request Express Request
-	 * @param response Express Response
 	 * @param member Member field name to check. Default is 'thumbnail'
 	 */
-	public isThumbnailUpdate(request, response, member: string = 'thumbnail') {
+	public isThumbnailUpdate(request, member: string = 'thumbnail') {
 		return (
 			member in request.payload &&
 			member in request.body &&
