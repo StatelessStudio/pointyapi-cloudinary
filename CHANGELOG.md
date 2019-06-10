@@ -1,0 +1,1 @@
+# PointyApi Cloudinary Changelog

@@ -1,0 +1,23 @@
+{
+	"name": "pointyapi-cloudinary",
+	"version": "0.0.1",
+	"author": "stateless-studio",
+	"license": "MIT",
+	"scripts": {
+		"postinstall": "tsc --p tsconfig.dist.json"
+	},
+	"dependencies": {
+		"@types/node": "^10.14.8",
+		"cloudinary": "^1.14.0",
+		"typescript": "^3.5.1"
+	},
+	"devDependencies": {
+		"tslint": "^5.17.0",
+		"tslint-eslint-rules": "^5.4.0"
+	},
+	"main": "./index.js",
+	"types": "./index.d.ts",
+	"directories": {
+		"lib": "lib"
+	}
+}
