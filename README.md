@@ -40,3 +40,17 @@ router.delete(
 );
 
 ```
+
+### Some images should not be deleted...
+
+Sometimes, you don't want an image to be delete when it is updated or the object is removed.
+For example, if you have a default thumbnail for all users, it shouldn't be deleted when a user uploads their own.
+
+`cloud.undeletables` is an array of IDs you don't want to be deleted:
+
+```typescript
+...
+cloud.init();
+
+cloud.undeletables = [ process.env.DEFAULT_THUMBNAIL ];
+```

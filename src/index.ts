@@ -1,6 +1,8 @@
 const cloudinary = require('cloudinary').v2;
 
 export class PointyCloudinary {
+	public undeletables: any[] = [];
+
 	/**
 	 * Initialize Cloudinary
 	 */
@@ -31,10 +33,15 @@ export class PointyCloudinary {
 	 */
 	public delete(id: number | string) {
 		return new Promise((a, r) => {
-			cloudinary.uploader.destroy(id, {}, (error, result) => {
-				if (error) r(error);
-				else a(result);
-			});
+			if (this.undeletables.includes(id)) {
+				a();
+			}
+			else {
+				cloudinary.uploader.destroy(id, {}, (error, result) => {
+					if (error) r(error);
+					else a(result);
+				});
+			}
 		});
 	}
 
