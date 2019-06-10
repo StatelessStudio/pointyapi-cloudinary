@@ -37,6 +37,46 @@ export class PointyCloudinary {
 			});
 		});
 	}
+
+	/**
+	 * Middleware to check if this request is a thumbnail update
+	 * @param request Express Request
+	 * @param response Express Response
+	 * @param next Express NextFunction
+	 * @param member (Optional) Thumbnail field name to check. Default is 'thumbnail'
+	 */
+	public updateThumbnail(
+		request,
+		response,
+		next,
+		member: string = 'thumbnail'
+	) {
+		if ((this.isThumbnailUpdate(request), member)) {
+			this.delete(request.payload[member]);
+		}
+
+		next();
+	}
+
+	/**
+	 * Middlware to delete thumbnail
+	 * @param request Express Request
+	 * @param response Express Response
+	 * @param next Express NextFunction
+	 * @param member (Optional) Thumbnail field name to check. Default is 'thumbnail'
+	 */
+	public deleteThumbnail(
+		request,
+		response,
+		next,
+		member: string = 'thumbnail'
+	) {
+		if (member in request.payload) {
+			this.delete(request.payload[member]);
+		}
+
+		next();
+	}
 }
 
 export const cloud = new PointyCloudinary();
