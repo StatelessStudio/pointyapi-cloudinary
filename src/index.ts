@@ -59,7 +59,7 @@ export class PointyCloudinary {
 		member: string = 'thumbnail'
 	) {
 		if ((this.isThumbnailUpdate(request), member)) {
-			this.delete(request.payload[member]);
+			this.delete(request.payload[member]).catch(() => {});
 		}
 
 		next();
@@ -79,7 +79,7 @@ export class PointyCloudinary {
 		member: string = 'thumbnail'
 	) {
 		if (member in request.payload) {
-			this.delete(request.payload[member]);
+			this.delete(request.payload[member]).catch(() => {});
 		}
 
 		next();
