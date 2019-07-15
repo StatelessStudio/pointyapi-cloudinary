@@ -1,5 +1,11 @@
 # PointyApi Cloudinary Changelog
 
+## [0.0.4] Jul-15-2019
+
+### Fixes
+- Updated dependency with security update `lodash`
+- Updated dependencies
+
 ## [0.0.3] Jul-14-2019
 
 ### Fixes
