@@ -1,5 +1,10 @@
 # PointyApi Cloudinary Changelog
 
+## [0.0.5] Aug-26-2019
+
+### Fixes
+- npm update
+
 ## [0.0.4] Jul-15-2019
 
 ### Fixes
