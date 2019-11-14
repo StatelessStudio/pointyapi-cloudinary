@@ -1,5 +1,9 @@
 # PointyApi Cloudinary Changelog
 
+## [0.0.6] Nov-14-2019
+
+### Fixes
+
 ## [0.0.5] Aug-26-2019
 
 ### Fixes
