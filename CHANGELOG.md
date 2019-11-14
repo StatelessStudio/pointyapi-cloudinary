@@ -3,6 +3,7 @@
 ## [0.0.6] Nov-14-2019
 
 ### Fixes
+- npm update
 - Readme credit
 
 ## [0.0.5] Aug-26-2019

@@ -7,12 +7,12 @@
 		"postinstall": "tsc --p tsconfig.dist.json"
 	},
 	"dependencies": {
-		"@types/node": "^10.14.16",
-		"cloudinary": "^1.14.0",
-		"typescript": "^3.5.3"
+		"@types/node": "^10.17.5",
+		"cloudinary": "^1.17.0",
+		"typescript": "^3.7.2"
 	},
 	"devDependencies": {
-		"tslint": "^5.19.0",
+		"tslint": "^5.20.1",
 		"tslint-eslint-rules": "^5.4.0"
 	},
 	"main": "./index.js",
