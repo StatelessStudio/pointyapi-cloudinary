@@ -1,5 +1,12 @@
 # PointyApi Cloudinary Changelog
 
+## [0.0.6] Nov-14-2019
+
+### Fixes
+- Upgrade to node 12
+- npm update
+- Readme credit
+
 ## [0.0.5] Aug-26-2019
 
 ### Fixes
