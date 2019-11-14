@@ -1,5 +1,7 @@
 # PointyAPI Cloudinary
 
+[Stateless Studio: Web-App Developers](https://stateless.studio)
+
 ## Install
 `npm i pointyapi-cloudinary`
 
