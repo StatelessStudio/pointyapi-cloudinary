@@ -1,5 +1,10 @@
 # PointyApi Cloudinary Changelog
 
+## [0.0.7] Oct-21-2020
+
+### Fixes
+- Change postinstall script to prepare
+
 ## [0.0.6] Nov-14-2019
 
 ### Fixes
